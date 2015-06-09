@@ -23,8 +23,8 @@ public class KlientGUI extends JFrame {
   	private JPanel panel;
   	private JTextField host, port, wiadomosc;
   	private JTextArea komunikaty;
-  	private JList zalogowani;
-	private DefaultListModel listaZalogowanych;
+  	private JList<String> zalogowani;
+	private DefaultListModel<String> listaZalogowanych;
 
 	//Klient
 	private String nazwaSerwera = "localhost";
@@ -54,8 +54,8 @@ public class KlientGUI extends JFrame {
 		rozlacz = new JButton("RozĹ‚Ä…cz");
 		rozlacz.setEnabled(false);
 
-		listaZalogowanych = new DefaultListModel();
-		zalogowani = new JList(listaZalogowanych);
+		listaZalogowanych = new DefaultListModel<String>();
+		zalogowani = new JList<String>(listaZalogowanych);
 		zalogowani.setFixedCellWidth(120);
 
           	ObslugaZdarzen obsluga = new ObslugaZdarzen();

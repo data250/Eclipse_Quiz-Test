@@ -11,7 +11,11 @@ import java.util.*;
 
 public class SerwerGUI extends JFrame {
 
-    //GUI
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	//GUI
     private JButton uruchom, zatrzymaj;
     private JPanel panel;
     private JTextField port;
